@@ -4,32 +4,32 @@ export type Product = {
   description: string;
   actionLabel: string;
   url: string;
-  icon: "crossroads" | "cek" | "rundown";
+  icon: "alt_route" | "verified_user" | "event_available";
 };
 
 export const products: Product[] = [
   {
     id: "01",
     name: "LifeCrossroads",
-    description: "A tool for navigating life's decisions.",
+    description: "Tools for navigating life's decisions.",
     actionLabel: "Open LifeCrossroads",
     url: "https://www.lifecrossroads.my.id/",
-    icon: "crossroads",
+    icon: "alt_route",
   },
   {
     id: "02",
     name: "CekKamu",
-    description: "Interactive experiences to discover yourself.",
+    description: "Discover yourself through interactive experiences.",
     actionLabel: "Open CekKamu",
     url: "https://cekkamu.my.id/",
-    icon: "cek",
+    icon: "verified_user",
   },
   {
     id: "03",
-    name: "Rundown.live",
+    name: "RundownLive",
     description: "Plan and manage events in real time.",
     actionLabel: "Open Rundown",
     url: "https://app.rundownlive.my.id/",
-    icon: "rundown",
+    icon: "event_available",
   },
 ];

@@ -4,6 +4,7 @@ import { ProductCard } from "./ProductCard";
 export function ProductGrid() {
   return (
     <section
+      id="products"
       className="w-full max-w-5xl px-gutter"
       aria-label="Digital products"
     >

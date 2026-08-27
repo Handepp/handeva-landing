@@ -1,26 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeIn, dotPulse } from "@/lib/motion";
+import Image from "next/image";
+import { fadeIn } from "@/lib/motion";
 
 export function Header() {
   return (
-    <header className="flex shrink-0 items-center justify-center pt-6 lg:pt-8">
-      <motion.div
-        className="flex items-center gap-1 font-[family-name:var(--font-mono)] text-sm uppercase tracking-[0.2em] text-primary"
-        variants={fadeIn}
-        initial="hidden"
-        animate="visible"
-      >
-        <span className="font-[family-name:var(--font-headline)] text-xl font-semibold tracking-tight normal-case">
-          handeva.
-        </span>
-        <motion.span
-          className="inline-block h-2 w-2 rounded-full bg-primary-container"
-          animate={dotPulse}
-          aria-hidden="true"
+    <motion.div
+      className="mb-stack-md"
+      variants={fadeIn}
+      initial="hidden"
+      animate="visible"
+      transition={{ delay: 0.1 }}
+    >
+      <div className="animate-logo flex cursor-default items-center justify-center">
+        <Image
+          src="/assets/logo.png"
+          alt="handeva"
+          width={200}
+          height={64}
+          className="h-16 w-auto object-contain"
+          priority
         />
-      </motion.div>
-    </header>
+      </div>
+    </motion.div>
   );
 }
