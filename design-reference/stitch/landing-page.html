@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;overflow:hidden;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+.reveal-init {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+  50% { transform: scale(1.02) rotate(1deg); opacity: 1; }
+}
+.animate-logo {
+  animation: soft-pulse 4s ease-in-out infinite;
+}
+.group:hover .arrow-anim {
+  transform: translate(2px, -2px);
+}
+</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed":"#1b1b1c","surface-bright":"#383940","secondary":"#c8c6c5","background":"#12131a","on-tertiary":"#303030","on-tertiary-fixed-variant":"#474746","surface-container-low":"#1a1b22","inverse-surface":"#e2e1eb","surface-variant":"#33343c","surface-dim":"#12131a","surface-container-highest":"#33343c","on-surface-variant":"#c4c9ac","tertiary-fixed":"#e5e2e1","tertiary":"#ffffff","inverse-primary":"#506600","secondary-container":"#4a4949","on-background":"#e2e1eb","secondary-fixed-dim":"#c8c6c5","on-surface":"#e2e1eb","error":"#ffb4ab","on-error-container":"#ffdad6","primary-container":"#c3f400","surface-container-lowest":"#0c0e14","error-container":"#93000a","outline-variant":"#444933","tertiary-container":"#e5e2e1","on-secondary-fixed":"#1c1b1b","outline":"#8e9379","inverse-on-surface":"#2f3037","on-secondary-container":"#bab8b7","on-secondary-fixed-variant":"#474646","primary-fixed":"#c3f400","on-secondary":"#313030","primary":"#ffffff","on-error":"#690005","secondary-fixed":"#e5e2e1","tertiary-fixed-dim":"#c8c6c5","on-tertiary-container":"#656464","on-primary-fixed-variant":"#3c4d00","surface-container-high":"#282a31","primary-fixed-dim":"#abd600","surface-tint":"#abd600","surface-container":"#1e1f26","on-primary":"#283500","surface":"#12131a","on-primary-fixed":"#161e00","on-primary-container":"#556d00"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"stack-sm":"8px","stack-md":"24px","gutter":"24px","stack-lg":"64px","margin-mobile":"20px","unit":"4px","container-max":"1120px","section-gap":"128px"},"fontFamily":{"body-lg":["Inter"],"headline-md":["Geist"],"headline-lg-mobile":["Geist"],"headline-lg":["Geist"],"body-md":["Inter"],"label-mono":["JetBrains Mono"],"display-lg":["Geist"],"caption":["Inter"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"500"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-mono":["13px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"500"}],"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.04em","fontWeight":"700"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-surface font-body-md text-on-surface flex flex-col h-screen overflow-hidden dark">
+<main class="flex-1 w-full h-full flex flex-col items-center justify-center max-w-container-max mx-auto px-gutter relative">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-fixed/5 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen opacity-30 reveal-init reveal-in" data-delay="0"></div>
+<div class="mb-stack-md reveal-init reveal-in" data-delay="100"><div class="flex items-center gap-unit font-label-mono text-label-mono uppercase tracking-widest animate-logo cursor-default"><img src="https://lh3.googleusercontent.com/aida/AEtjO1U0ButeBb_7mK2hPpaE7fXxSF1Mi24IQfyee8KBmlZyS1FlySoZ4Gf6dIKDDyVS1oPlH8Knl6ONT5KnCyZBhdg2vAQ486Bpli9pLNf46YRZJL9r95KT-ddWHVTtH4yYMBnnNs1Hik2_BP0l72ZuGIYtT8EpFScPlTACRNfFVYCLXsrz1NqswnpbvV7znFD8a4XKdI9NwoZIDLopMU2OSeZHMW9MiT_-OyT6NsMvQe2UZnUKJX0OMOiWNpI" alt="handeva" class="h-16 w-auto object-contain"></div></div>
+<div class="flex flex-col justify-center items-center text-center w-full max-w-4xl px-gutter mb-stack-md">
+<h1 class="font-display-lg text-display-lg text-primary tracking-tighter mix-blend-difference mb-stack-sm reveal-init reveal-in" data-delay="200">
+            We build things we need.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light tracking-wide mb-stack-md reveal-init reveal-in" data-delay="300">
+            Independent studio building useful digital products.
+        </p>
+<button class="bg-primary text-on-primary font-label-mono text-label-mono uppercase tracking-widest px-6 py-3 rounded-full hover:bg-primary-fixed hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(195,244,0,0.2)] transition-all duration-300 reveal-init reveal-in" data-delay="400">Try Our Products</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter w-full max-w-5xl group/grid">
+<a class="group relative bg-surface-container-lowest border border-surface-container p-stack-md rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-[0_8px_30px_rgba(195,244,0,0.08)] overflow-hidden flex flex-col items-start justify-between min-h-[180px] reveal-init reveal-in" data-delay="600" href="#"><span class="material-symbols-outlined absolute top-4 right-4 text-on-surface-variant opacity-0 group-hover:opacity-100 group-hover:text-primary transition-all duration-300 text-sm arrow-anim">north_east</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center mb-stack-md border border-surface-container transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary/5 group-hover:border-primary/20">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors duration-300 text-lg" style="font-variation-settings: 'FILL' 0;">alt_route</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-unit group-hover:text-primary transition-colors duration-300 text-[20px]">LifeCrossroads</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light group-hover:text-on-surface transition-colors duration-300 text-sm">Tools for navigating life's decisions.</p>
+</div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+</a>
+<a class="group relative bg-surface-container-lowest border border-surface-container p-stack-md rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-[0_8px_30px_rgba(195,244,0,0.08)] overflow-hidden flex flex-col items-start justify-between min-h-[180px] reveal-init reveal-in" data-delay="750" href="#"><span class="material-symbols-outlined absolute top-4 right-4 text-on-surface-variant opacity-0 group-hover:opacity-100 group-hover:text-primary transition-all duration-300 text-sm arrow-anim">north_east</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center mb-stack-md border border-surface-container transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary/5 group-hover:border-primary/20">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors duration-300 text-lg" style="font-variation-settings: 'FILL' 0;">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-unit group-hover:text-primary transition-colors duration-300 text-[20px]">CekKamu</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light group-hover:text-on-surface transition-colors duration-300 text-sm">Discover yourself through interactive experiences.</p>
+</div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+</a>
+<a class="group relative bg-surface-container-lowest border border-surface-container p-stack-md rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/40 hover:shadow-[0_8px_30px_rgba(195,244,0,0.08)] overflow-hidden flex flex-col items-start justify-between min-h-[180px] reveal-init reveal-in" data-delay="900" href="#"><span class="material-symbols-outlined absolute top-4 right-4 text-on-surface-variant opacity-0 group-hover:opacity-100 group-hover:text-primary transition-all duration-300 text-sm arrow-anim">north_east</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center mb-stack-md border border-surface-container transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary/5 group-hover:border-primary/20">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors duration-300 text-lg" style="font-variation-settings: 'FILL' 0;">event_available</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-unit group-hover:text-primary transition-colors duration-300 text-[20px]">RundownLive</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light group-hover:text-on-surface transition-colors duration-300 text-sm">Plan and manage events in real time.</p>
+</div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+</a>
+</div>
+</main>
+<footer class="absolute bottom-0 w-full h-16 flex items-center justify-center max-w-container-max mx-auto px-gutter reveal-init reveal-in" data-delay="1200"><div class="text-[11px] font-label-mono text-on-surface-variant uppercase tracking-[0.1em] opacity-60">© 2026 Handeva — Independent digital products</div></footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('.reveal-init');
+        elements.forEach(el => {
+            const delay = el.getAttribute('data-delay') || 0;
+            setTimeout(() => {
+                el.classList.add('reveal-in');
+            }, parseInt(delay));
+        });
+    });
+</script>
+
+
+</body></html>

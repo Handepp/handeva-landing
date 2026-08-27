@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --surface: #12131a;
+  --surface-container: #1e1f26;
+  --surface-container-low: #1a1b22;
+  --surface-container-lowest: #0c0e14;
+  --on-surface: #e2e1eb;
+  --on-surface-variant: #c4c9ac;
+  --primary: #ffffff;
+  --on-primary: #283500;
+  --primary-container: #c3f400;
+  --primary-fixed: #c3f400;
+  --outline-variant: #444933;
+  --accent-glow: rgba(195, 244, 0, 0.2);
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-container: var(--primary-container);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-outline-variant: var(--outline-variant);
+
+  --font-headline: var(--font-geist-sans);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+
+  --spacing-gutter: 24px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: 24px;
+  --spacing-stack-lg: 64px;
+  --spacing-section-gap: 128px;
+
+  --radius-sm: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+
+  --max-width-container: 1120px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+}
