@@ -27,9 +27,6 @@ export function Logo() {
           </span>
         </motion.span>
       </div>
-      <span className="mt-2 font-[family-name:var(--font-jetbrains-mono)] text-[10px] uppercase tracking-[0.25em] text-on-surface-variant/70">
-        digital studio
-      </span>
     </motion.div>
   );
 }
