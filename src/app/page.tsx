@@ -5,15 +5,17 @@ import { ProductGrid } from "@/components/ProductGrid";
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-dvh flex-col overflow-y-auto bg-surface text-on-surface md:h-dvh md:overflow-hidden">
+    <>
       <BackgroundAnimation />
 
-      <main className="relative mx-auto flex w-full max-w-[var(--max-width-container)] flex-1 flex-col items-center justify-center px-gutter py-12 md:py-0">
-        <Hero />
-        <ProductGrid />
-      </main>
+      <div className="relative z-10 flex min-h-dvh flex-col overflow-y-auto text-on-surface md:h-dvh md:overflow-hidden">
+        <main className="mx-auto flex w-full max-w-[var(--max-width-container)] flex-1 flex-col items-center justify-center px-gutter py-12 md:py-0">
+          <Hero />
+          <ProductGrid />
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
