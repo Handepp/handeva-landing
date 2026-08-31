@@ -85,8 +85,37 @@ body {
   mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 75%);
 }
 
+/* GPU-friendly ambient glow — radial gradients instead of animated blur filters */
+.bg-ambient {
+  background:
+    radial-gradient(circle 420px at 50% 50%, rgba(195, 244, 0, 0.09) 0%, transparent 72%),
+    radial-gradient(circle 180px at 20% 30%, rgba(195, 244, 0, 0.07) 0%, transparent 72%),
+    radial-gradient(circle 160px at 85% 55%, rgba(195, 244, 0, 0.05) 0%, transparent 72%),
+    radial-gradient(circle 120px at 35% 80%, rgba(196, 201, 172, 0.05) 0%, transparent 72%);
+}
+
+.bg-ambient-pulse {
+  background: radial-gradient(circle 420px at 50% 50%, rgba(195, 244, 0, 0.06) 0%, transparent 72%);
+  animation: ambient-pulse 12s ease-in-out infinite;
+}
+
+.bg-vignette {
+  background: linear-gradient(to bottom, transparent 0%, transparent 55%, rgba(18, 19, 26, 0.8) 100%);
+}
+
+@keyframes ambient-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-logo {
+  .animate-logo,
+  .bg-ambient-pulse {
     animation: none;
   }
 }
